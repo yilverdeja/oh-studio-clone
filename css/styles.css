@@ -129,21 +129,132 @@ p {
 .card {
 }
 
-.card .card__image {
+.card__image {
 	border-radius: 10px;
+	overflow: hidden;
 	width: 100%;
 	height: 30rem;
 	object-fit: cover;
 }
 
 @media screen and (min-width: 810px) and (max-width: 1199px) {
-	.card .card__image {
+	.card__image {
 		height: 42rem;
 	}
 }
 
 @media screen and (min-width: 1200px) {
-	.card .card__image {
-		font-size: 52rem;
+	.card__image {
+		height: 52rem;
+	}
+}
+
+/* Feature */
+.feature {
+	position: relative;
+}
+
+.feature__link {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	overflow: hidden;
+	display: block;
+	text-decoration: none;
+}
+
+.feature__image {
+	aspect-ratio: 1/0.7;
+	height: auto;
+	transition: all 0.2s;
+}
+
+.feature__link-text {
+	color: var(--color-black);
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+.feature__link-icon {
+	position: absolute;
+	margin: 2rem 2rem;
+	height: 48px;
+	width: 48px;
+	background: white;
+	border-radius: 50%;
+	top: 0;
+	right: 0;
+	opacity: 0;
+	transition: opacity 0.3s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.feature__link-icon::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 24px;
+	width: 24px;
+	background-image: url('../images/arrow.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	transform: translate(-50%, -50%);
+}
+
+.feature--coming-soon .feature__link-text::after {
+	content: 'Coming Soon';
+	margin-left: 1rem;
+	color: var(--color-link);
+}
+
+.feature--coming-soon .feature__link-icon {
+	opacity: 1;
+	background: var(--color-white);
+}
+
+.feature--coming-soon .feature__link-icon::after {
+	background-image: url('../images/lock.svg');
+}
+
+@media screen and (min-width: 810px) {
+	.feature__link-text {
+		margin: 2rem 2rem;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		transition: opacity 0.3s;
+		color: white;
+	}
+
+	.feature--coming-soon .feature__link-icon {
+		opacity: 0;
+	}
+
+	.feature--coming-soon .feature__link-text::after {
+		margin-left: 0;
+		display: block;
+		color: var(--color-link-hover);
+	}
+
+	.feature__link:hover .feature__image {
+		filter: blur(8px) brightness(0.6);
+		-webkit-filter: blur(8px) brightness(0.6);
+	}
+
+	.feature__link:hover .feature__link-text,
+	.feature__link:hover .feature__link-icon {
+		opacity: 1;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.feature__link-text {
+		font-size: 2.4rem;
 	}
 }
