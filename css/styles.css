@@ -42,7 +42,7 @@ h2 {
 
 p {
 	font-size: 1.4rem;
-	margin-top: 0;
+	margin: 0;
 }
 
 @media screen and (min-width: 810px) and (max-width: 1199px) {
@@ -257,4 +257,24 @@ p {
 	.feature__link-text {
 		font-size: 2.4rem;
 	}
+}
+
+/* Info */
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.info__name {
+	font-size: 2.2rem;
+	font-weight: 600;
+}
+
+.info__date,
+.info__position {
+	font-size: 1.4rem;
+	color: var(--color-link);
 }
