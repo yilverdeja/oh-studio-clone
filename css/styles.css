@@ -283,12 +283,12 @@ p {
 .block-info {
 	display: flex;
 	flex-direction: column;
-	jusitfy-content: center;
+	justify-content: center;
 	align-items: center;
+	text-align: center;
 	gap: 2rem;
 }
 
-/* Grids */
 /* Grids */
 .grid {
 	display: grid;
@@ -297,6 +297,7 @@ p {
 .grid--brands,
 .grid--info {
 	grid-template-columns: repeat(2, 1fr);
+	gap: 6rem 0rem;
 }
 
 @media screen and (min-width: 810px) {
