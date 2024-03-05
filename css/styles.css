@@ -4,7 +4,7 @@
 	--color-black: #000;
 	--color-white: #fff;
 	--color-link: #7f7f7f;
-	--color-link-hover: #e8e5e480;
+	--color-link-hover: #e8e5e4;
 }
 
 /* Typography */
@@ -67,17 +67,21 @@ p {
 .skill {
 	display: inline-block;
 	cursor: default;
-}
-
-.skill__text {
 	background-color: var(--color-link-hover);
 	border-radius: 30px;
 	padding: 1.2rem 0.8rem;
+}
+
+.skill--empty {
+	background-color: transparent;
+}
+
+.skill__text {
 	margin: 0;
 }
 
 /* Text Container */
-.text-container {
+.block-text {
 	display: flex;
 	flex-direction: column;
 	gap: 0.5rem;
@@ -87,16 +91,36 @@ p {
 	max-width: 700px;
 }
 
-.text-container__description {
+.block-text__description {
 	margin: 0rem;
 }
 
-.text-container--descriptor {
+.block-text--descriptor {
 	font-size: 2.4rem;
 }
 
 @media screen and (min-width: 810px) {
-	.text-container--descriptor {
+	.block-text--descriptor {
 		font-size: revert;
 	}
+}
+
+/* Contact Block */
+.block-contact {
+	text-align: center;
+}
+
+.block-contact a {
+	color: var(--color-link);
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+.block-contact a:hover {
+	color: var(--color-link-hover);
+	text-decoration: none;
+}
+
+.block-contact__text {
+	margin: 0;
 }
