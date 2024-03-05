@@ -58,3 +58,16 @@ p {
 		font-size: 7.2rem;
 	}
 }
+
+/* Skill Tab */
+.skill {
+	display: inline-block;
+	cursor: default;
+}
+
+.skill__text {
+	background-color: var(--color-link-hover);
+	border-radius: 30px;
+	padding: 1.2rem 0.8rem;
+	margin: 0;
+}
