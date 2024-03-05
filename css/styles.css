@@ -1,0 +1,8 @@
+@import './normalize.css';
+
+:root {
+	--color-black: #000;
+	--color-white: #fff;
+	--color-link: #7f7f7f;
+	--color-link-hover: #e8e5e480;
+}
