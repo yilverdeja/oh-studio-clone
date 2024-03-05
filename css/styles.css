@@ -278,3 +278,12 @@ p {
 	font-size: 1.4rem;
 	color: var(--color-link);
 }
+
+/* Info Block */
+.block-info {
+	display: flex;
+	flex-direction: column;
+	jusitfy-content: center;
+	align-items: center;
+	gap: 2rem;
+}
