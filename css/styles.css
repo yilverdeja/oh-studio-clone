@@ -341,3 +341,31 @@ p {
 	display: inline-block;
 	margin-right: 2rem;
 }
+
+/* Nav */
+
+.nav {
+	width: 300px;
+}
+.nav__list {
+	/* background: gold; */
+	backdrop-filter: blur(16px);
+	background-color: rgba(232, 229, 228, 0.5);
+	border-radius: 40px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5rem;
+}
+
+.nav__list .list__item {
+	width: 100%;
+	margin-right: 0;
+	text-align: center;
+	padding: 1.5rem 0rem;
+}
+
+.nav__active {
+	background: white;
+	height: 100%;
+	border-radius: 40px;
+}
