@@ -43,6 +43,15 @@ h2 {
 p {
 	font-size: 1.4rem;
 	margin: 0;
+	transition: color 0.3s;
+}
+
+a {
+	cursor: pointer;
+}
+
+a > p:hover {
+	color: var(--color-link);
 }
 
 @media screen and (min-width: 810px) and (max-width: 1199px) {
