@@ -413,3 +413,34 @@ p {
 		gap: 1rem;
 	}
 }
+
+/* Container */
+.container {
+	max-width: 1400px;
+}
+
+/* Hero */
+.hero {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 4rem;
+	height: 100%;
+}
+
+.hero__heading {
+	text-align: center;
+}
+
+.hero__list {
+	display: none;
+	margin: 0;
+}
+
+@media screen and (min-width: 810px) {
+	.hero__list {
+		display: block;
+	}
+}
