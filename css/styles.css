@@ -47,6 +47,8 @@ p {
 }
 
 a {
+	text-decoration: none;
+	color: var(--color-black);
 	cursor: pointer;
 }
 
@@ -323,6 +325,7 @@ a > p:hover {
 .grid--brands,
 .grid--info {
 	grid-template-columns: repeat(2, 1fr);
+	padding: 4rem;
 	gap: 6rem 0rem;
 }
 
@@ -457,8 +460,7 @@ a > p:hover {
 	box-sizing: border-box;
 }
 
-/* Hero */
-.hero {
+.block-container {
 	box-sizing: border-box;
 	width: 100%;
 	display: flex;
@@ -466,10 +468,20 @@ a > p:hover {
 	justify-content: center;
 	align-items: center;
 	gap: 4rem;
-	height: 50vh;
 	padding: 2rem;
 }
 
+.block-container--more-height {
+	height: 50vh;
+}
+
+@media screen and (min-width: 810px) {
+	.block-container--more-height {
+		height: 80vh;
+	}
+}
+
+/* Hero */
 .hero__heading {
 	text-align: center;
 }
@@ -480,9 +492,6 @@ a > p:hover {
 }
 
 @media screen and (min-width: 810px) {
-	.hero {
-		height: 80vh;
-	}
 	.hero__list {
 		display: block;
 	}
