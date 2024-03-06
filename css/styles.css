@@ -491,3 +491,27 @@ a > p:hover {
 		display: block;
 	}
 }
+
+/* Animations */
+.wave {
+	display: inline-block;
+	cursor: text;
+}
+
+.wave:hover {
+	animation: 0.5s ease-in-out infinite alternate wave;
+}
+
+@keyframes wave {
+	0% {
+		transform: rotate(0deg) translateX(0px);
+	}
+
+	50% {
+		transform: rotate(-30deg) translateX(-10px);
+	}
+
+	100% {
+		transform: rotate(0deg) translateX(0px);
+	}
+}
