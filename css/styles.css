@@ -329,3 +329,15 @@ p {
 	max-width: 100%;
 	height: auto;
 }
+
+/* Lists */
+.list {
+	list-style: none;
+	padding-left: 0;
+	color: var(--color-headings);
+}
+
+.list--inline .list__item {
+	display: inline-block;
+	margin-right: 2rem;
+}
