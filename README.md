@@ -1,5 +1,6 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/19d379cc-d0f4-4765-9d26-95cc94e3efcc/deploy-status)](https://app.netlify.com/sites/ohstudioclone/deploys)
 # OH.Studio Clone
-A clone of the the [oh.studio](https://oh.studio/) website by Oli Harris
+A [clone](ohstudioclone.netlify.app) of the the [oh.studio](https://oh.studio/) website by Oli Harris
 
 ## Why?
 To practice my frontend skills using a bottom-up approach by first adding the basic styles, then designing sub-components, block-level components then finishing with the whole page
